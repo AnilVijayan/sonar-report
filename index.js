@@ -108,7 +108,7 @@ function logError(context, error){
     hotspotKeys: []
   };
 
-  const leakPeriodFilter = data.sinceLeakPeriod ? '&sinceLeakPeriod=true' : '';
+  const leakPeriodFilter = '&sinceLeakPeriod=true';
   data.deltaAnalysis = data.sinceLeakPeriod ? 'Yes' : 'No';
   const sonarBaseURL = data.sonarBaseURL;
   const sonarComponent = argv.sonarcomponent;
